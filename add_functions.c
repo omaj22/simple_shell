@@ -13,7 +13,7 @@ char *_unsignedIntToString(unsigned int n)
 	char *str;
 
 	length = _integerLength(n);
-	trs = malloc(length + 1);
+	str = malloc(length + 1);
 	if (!str)
 	{
 		return (NULL);
@@ -131,7 +131,7 @@ int write_history(sh *data __attribute__((unused)))
 
 	if (line_of_history)
 	{
-		while (line_of_history[len])
+		while (line_of_history[length])
 		{
 			length++;
 		}
