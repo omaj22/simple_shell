@@ -17,6 +17,10 @@
 #define MAX_HISTORY 100
 #define MAX_ALIASES 10
 
+char *history[MAX_HISTORY];
+/*int history_count = 0;*/
+char *aliases[MAX_ALIASES * 2];
+
 char *read_input(void);
 char **tokenize_input(char *input);
 int execute_command(char **args);
